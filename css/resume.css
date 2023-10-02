@@ -132,3 +132,30 @@ a {
 .about-left__langs li span {
   font-weight: normal; /* Make proficiency level not bold */
 }
+
+.download-button {
+  background-color: #495057;
+  color: #fff !important; /* Text color with !important */
+  border: none; /* Remove the default button border */
+  outline: none; /* Remove the focus outline */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Change button color on hover */
+.download-button:hover {
+  background-color: #bd38ab;
+}
+
+.list-icons-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text horizontally within the card */
+}
+
+.list-icons-card h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.2rem;
+  color:#495057;
+}
