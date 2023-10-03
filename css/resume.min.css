@@ -93,3 +93,15 @@
     background-color: #480b44;
   }
   
+  @media (max-width: 767px) {
+    .project-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-box a.btn {
+      margin-top: 10px;
+    }
+  }
