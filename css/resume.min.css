@@ -30,4 +30,66 @@
     margin-top: 0.2rem;
     color:#495057;
   }
+
+  .list-icons-card:hover .tech-language-text {
+    color: #bd38ab;
+  }
+  
+  /* Style for the project boxes */
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .project-box {
+    width: calc(33.33% - 10px);
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out; 
+  }
+  
+  /* Add a hover effect */
+  .project-box:hover {
+    transform: scale(1.1); /* Enlarge the box on hover */
+  }
+  
+  /* Style for project box content */
+  .project-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .project-box h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .project-box p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .project-box a.btn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #bd38ab;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .project-box a.btn:hover {
+    background-color: #480b44;
+  }
   
