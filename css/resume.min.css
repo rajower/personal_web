@@ -272,7 +272,8 @@
 /* Dark mode button hover color */
 .dark-mode .download-button:hover {
     background-color: #ff8de1; /* Adjust the hover color for buttons in dark mode */
-  }
+    color: #fff; /* Adjust text color to improve visibility in dark mode */
+}
   
   /* Dark mode project box hover color */
   .dark-mode .project-box:hover {
@@ -282,7 +283,7 @@
   
   /* Dark mode link hover color */
   .dark-mode a:hover {
-    color: #ff8de1 !important; /* Adjust the hover color for links in dark mode */
+    color: #ff8de1; /* Adjust the hover color for links in dark mode */
   }
   
   
@@ -295,4 +296,5 @@
   .dark-mode #sideNav .navbar-nav .nav-item .nav-link.active {
     color: #bd38ab !important; /* Adjust the selected color for navigation links in dark mode */
   }
+  
   
