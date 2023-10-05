@@ -35,29 +35,31 @@
     color: #bd38ab;
   }
   
-  /* Style for the project boxes */
-  .project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    transition: transform 0.2s ease-in-out;
+/* Your previous styles here */
+
+/* Style for the project boxes using CSS Grid */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Boxes will have a minimum width of 300px and adapt to the available space */
+    gap: 20px; /* Add gap between boxes */
   }
   
   .project-box {
-    width: calc(33.33% - 10px);
-    max-width: 300px;
     background-color: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 20px;
     box-sizing: border-box;
-    transition: transform 0.2s ease-in-out, scale 0.2s ease-in-out; 
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    height: 100%; /* Set a fixed height for the project box */
   }
   
   /* Add a hover effect */
   .project-box:hover {
     transform: scale(1.1); /* Enlarge the box on hover */
+    background-color: #bd38ab; /* Change background color on hover */
   }
   
   /* Style for project box content */
@@ -67,34 +69,42 @@
     border-radius: 5px;
   }
   
+  /* Vertically center content */
+  .project-box .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust to place button at the bottom */
+  }
+  
   .project-box h3 {
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    text-align: center; /* Center-align the heading */
   }
   
   .project-box p {
     margin: 10px 0;
     font-size: 1rem;
+    text-align: center; /* Center-align the text */
   }
   
   .project-box a.btn {
-    display: inline-block;
-    margin-top: 10px;
     text-decoration: none;
     background-color: #bd38ab;
     color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
+    width: 100%; /* Make the button full width within the box */
   }
   
   .project-box a.btn:hover {
     background-color: #480b44;
   }
   
-  /* Center-align the buttons on mobile devices */
-/* Center-align the buttons on mobile devices */
+  /* Your other styles here */
+  
 @media (max-width: 767px) {
     .project-container {
       flex-direction: column; /* Stack boxes vertically */
@@ -198,6 +208,7 @@
     color: #fff; /* White button text color */
   }
   
+  
   /* Dark mode border color for project boxes */
   .dark-mode .project-box {
     border-color: #542b5e; /* Dark purple border color */
@@ -240,7 +251,8 @@
 
   /* Dark mode background color for the main sidebar */
 .dark-mode #sideNav {
-    background-color: #e4c1f9 !important; /* Deep pink background color for the sidebar */
+    background-color: #e4c1f9 !important;
+     /* Deep pink background color for the sidebar */
   }
   
   /* Dark mode text color for the sidebar links */
@@ -250,8 +262,37 @@
   
   /* Dark mode border color for the sidebar */
   .dark-mode #sideNav {
-    border-right: 4px solid #fff !important; /* White border on the right side of the sidebar */
+    border-right: none !important; /* White border on the right side of the sidebar */
+  }
+  
+  .resume-section {
+    border-bottom: none !important; /* Remove the bottom border */
+  }
+  
+/* Dark mode button hover color */
+.dark-mode .download-button:hover {
+    background-color: #ff8de1; /* Adjust the hover color for buttons in dark mode */
+  }
+  
+  /* Dark mode project box hover color */
+  .dark-mode .project-box:hover {
+    transform: scale(1.1); /* Enlarge the box on hover */
+    background-color: #ff8de1; /* Adjust the hover color for project boxes in dark mode */
+  }
+  
+  /* Dark mode link hover color */
+  .dark-mode a:hover {
+    color: #ff8de1 !important; /* Adjust the hover color for links in dark mode */
   }
   
   
+  /* Dark mode navigation link hover color */
+.dark-mode #sideNav .navbar-nav .nav-item .nav-link:hover {
+    color: #ff8de1 !important; /* Adjust the hover color for navigation links in dark mode */
+  }
+  
+  /* Dark mode navigation link selected (active) color */
+  .dark-mode #sideNav .navbar-nav .nav-item .nav-link.active {
+    color: #bd38ab !important; /* Adjust the selected color for navigation links in dark mode */
+  }
   
