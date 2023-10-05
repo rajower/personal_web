@@ -105,3 +105,153 @@
       margin-right: 0; /* Remove margin to prevent extra spacing */
     }
   }
+
+ /* Dark mode toggle styles */
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 10px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #ccc;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #bd38ab;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Sun and Moon icons */
+  .moon {
+    margin-right: 5px;
+  }
+  
+  .sun {
+    margin-left: 5px;
+  }
+
+/* Dark mode styles */
+/* Dark mode background color */
+.dark-mode {
+    background-color: #2c1632; /* Deep purple background color */
+    color: #e4c1f9; /* Light pink text color */
+  }
+  
+  /* Adjust link color for dark mode */
+  .dark-mode a {
+    color: #bd38ab; /* Deep pink link color */
+  }
+  
+  /* Dark mode button styles */
+  .dark-mode .btn {
+    background-color: #bd38ab; /* Deep pink button background color */
+    color: #fff; /* White button text color */
+  }
+  
+  /* Dark mode border color for project boxes */
+  .dark-mode .project-box {
+    border-color: #542b5e; /* Dark purple border color */
+  }
+  
+  /* Dark mode styles for the navigation bar */
+  .dark-mode .navbar {
+    background-color: #2c1632; /* Deep purple background color for the navigation bar */
+    color: #e4c1f9; /* Light pink text color for the navigation bar */
+  }
+  
+  /* Dark mode styles for the footer */
+  .dark-mode .footer {
+    background-color: #2c1632; /* Deep purple background color for the footer */
+    color: #e4c1f9; /* Light pink text color for the footer */
+  }
+  
+  /* Additional styles for an elegant feminine look */
+  .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+    color: #bd38ab; /* Deep pink headings */
+  }
+  
+  .dark-mode .subheading {
+    color: #ff8de1; /* Light pink subheadings */
+  }
+  
+  /* Add subtle texture or pattern to the background, adjust opacity as needed */
+  .dark-mode::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-texture-image.png'); /* Replace with your texture or pattern image */
+    opacity: 0.2; /* Adjust opacity for subtle effect */
+    pointer-events: none; /* Allow interaction with elements below */
+    z-index: -1; /* Place behind other content */
+  }
+
+  /* Dark mode background color for the main sidebar */
+.dark-mode #sideNav {
+    background-color: #e4c1f9 !important; /* Deep pink background color for the sidebar */
+  }
+  
+  /* Dark mode text color for the sidebar links */
+  .dark-mode #sideNav .navbar-nav .nav-item .nav-link {
+    color: #343a40 !important; /* White text color for the sidebar links */
+  }
+  
+  /* Dark mode border color for the sidebar */
+  .dark-mode #sideNav {
+    border-right: 4px solid #fff !important; /* White border on the right side of the sidebar */
+  }
+  
+  
+  
